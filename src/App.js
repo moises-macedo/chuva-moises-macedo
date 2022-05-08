@@ -1,9 +1,13 @@
 import MenuNav from "./Components/MenuNav";
+import Header from "./Components/Header";
 
 
 function App() {
   return (
-    <MenuNav/>
+    <>
+      <MenuNav />
+      <Header />
+    </>
   );
 }
 
