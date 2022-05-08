@@ -14,6 +14,10 @@
   display: grid;
   grid-template-columns: 220px 1fr; }
 
+.container--page-main {
+  overflow-y: auto;
+  scroll-behavior: smooth; }
+
 .container--videoDescription {
   display: flex;
   justify-content: space-between; }
