@@ -1,0 +1,103 @@
+@import "./global.scss";
+
+
+.resumo-title {
+    width: 1058px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $color-gray-20;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 30px;
+    margin-left: 44px;
+    background: $color-background-menu;
+
+    h3 {
+        margin-left: 15px;
+        font-size: 20px;
+        color: #4e4e4e;
+    }
+
+}
+
+.resumo-falseActive {
+    width: 1058px;
+    height: 144px;
+    margin-left: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid $color-gray-20;
+    border-right: 1px solid $color-gray-20;
+    border-bottom: 1px solid $color-gray-20;
+
+    .falseActive-paragraph {
+        margin-top: 15px;
+        height: 114px;
+        width: 100%;
+        max-width: 1028px;
+        font-family: $font-text;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #5C5C5C;
+        align-self: stretch;
+        text-align: justify;
+        letter-spacing: 0.02em;
+
+
+        button {
+            background: none;
+            cursor: pointer;
+
+            p {
+                font-size: 14px;
+                font-family: $font-text;
+                font-weight: 700;
+                color: $color-orange-50;
+            }
+        }
+    }
+
+}
+
+.resumo-trueActive{
+    width: 1058px;
+    height: 515px;
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 1px solid $color-gray-20;
+    border-right: 1px solid $color-gray-20;
+    border-bottom: 1px solid $color-gray-20;
+
+    p{
+        margin-left: 15px;
+        width: 100%;
+        max-width: 1028px;
+        font-family: $font-text;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #5C5C5C;
+        align-self: stretch;
+        text-align: justify;
+        letter-spacing: 0.02em;
+        button {
+            background: none;
+            cursor: pointer;
+
+            span {
+                font-size: 14px;
+                font-family: $font-text;
+                font-weight: 700;
+                color: $color-orange-50;
+            }
+        }
+
+    }
+
+}
