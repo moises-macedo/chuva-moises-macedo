@@ -1,29 +1,31 @@
 import UserVideo from "../../Assests/Img/user-video.png"
-
+import "../../Assests/Styles/Css/videoDescription.css"
 const VideoDescription = () => {
     return (
-        <div>
-            <div>
-                <div>
+        <div className="container--videoDescription">
+            <div className="videoDescription-video">
+                <div className="video-title">
                     <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
                 </div>
-                <div>
-                    <img src={UserVideo} alt="Beatriz Christiane Melo" />
-                    <div>
+                <div className="video-description">
+                    <div className="description-img">
+                        <img src={UserVideo} alt="Beatriz Christiane Melo" />
+                    </div>
+                    <div className="description-info">
                         <h3>Beatriz Christiane Melo</h3>
                         <p>FCA / Universidade Estadual de Campinas</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div className="videoDescription-info">
+                <div className="info-title">
                     <p>Detalhes</p>
                 </div>
-                <div>
-                    <div>
-                        <ul>
+                <div className="info-details">
+                    <div className="details-description">
+                        <ul className="description-main">
                             <li>
-                                <ul>
+                                <ul className="description-theme">
                                     <li>
                                         <p>Tipo de Apresentação: <span>Pôster.</span></p>
                                     </li>
@@ -35,7 +37,7 @@ const VideoDescription = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li className="description-author">
                                 <ul>
                                     <li>
                                         <p>Autores:</p>
@@ -57,7 +59,7 @@ const VideoDescription = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li className="description-university">
                                 <ul>
                                     <li>
                                         <p>Universidade Estadual de Campinas</p>
@@ -75,10 +77,10 @@ const VideoDescription = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div>
-                    <div>  
-                        <div></div>
+                    <div className="info-scrollbar">
+                        <div>
+
+                        </div>
                     </div>
                 </div>
 
