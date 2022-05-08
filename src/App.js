@@ -1,10 +1,9 @@
+import MenuNav from "./Components/MenuNav";
 
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <MenuNav/>
   );
 }
 
