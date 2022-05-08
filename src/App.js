@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <MenuNav />
-      <Header />
+      <div>
+        <Header />
+      </div>
     </>
   );
 }

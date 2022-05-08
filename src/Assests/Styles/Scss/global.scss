@@ -20,12 +20,14 @@ $color-organe-50:#ED7839;
 $color-btn-nav:#725C5C; 
 $color-border:#E7E7E7;
 $color-white:#ffffff;
+$color-gray-70:#333333;
+$color-border-header:#CCCCCC;
 $color-background-menu:#FDF1EB;
+$color-red-40:#F85959;
 $font-text: 'Quicksand', sans-serif;
 
-body{
+#root{
     height: 100vh;
     display: grid;
-    grid-template-columns: 220px 1fr;
-    
+    grid-template-columns: 220px 1fr;    
 }

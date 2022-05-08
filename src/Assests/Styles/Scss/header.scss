@@ -1,0 +1,99 @@
+@import "./global.scss";
+
+.container--header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 68px;
+    background-color: $color-background-menu;
+    align-items: center;
+}
+
+.header-description{
+    margin-left: 36px;
+
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 5px;
+        color: $color-btn-nav;
+
+        &:nth-child(3){
+            
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 400;
+        color: $color-btn-nav;
+        margin-top: 2px;
+        height: 26px;   
+
+    }
+
+}
+.header-language{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 97px;
+    height: 34px;
+    border: 1px solid $color-border-header;
+    border-radius: 3px;
+    background:none;
+    p{
+        text-transform: uppercase;
+        color: $color-gray-70;
+    }
+}
+.header-user{
+    margin-right: 36px;
+    display: flex;
+    .user-login{
+        h6{
+            font-family: $font-text;
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-gray-70;
+            text-align: right;
+            margin-right: 2px;
+        }
+        p{
+            color: $color-gray-70;
+            margin-right: 2px;
+            font-size: 12px;
+            font-family: $font-text;
+            font-weight: 400;
+        }
+
+    }
+
+}
+.user-img{
+    margin-left: 5px;
+    img{
+        border-radius: 50%;
+        
+    }
+    &::after{
+        content: "2";
+        font-size: 10px;
+        position: absolute;
+        background: $color-red-40;
+        color: $color-white;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        border-radius: 50%;
+        right: 33px;
+        top: 14px;
+        font-weight: 700;
+        
+    }
+    
+
+}
