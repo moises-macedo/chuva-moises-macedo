@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 220px 1fr; }
+
+.container--titleVideo {
+  width: 100%;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.titleVideo-title {
+  margin-left: 43px;
+  width: 100%;
+  max-width: 786px; }
+  .titleVideo-title h2 {
+    font-weight: 900, black;
+    font-size: 20px;
+    color: #ED7839;
+    line-height: 25px;
+    letter-spacing: 0.05em; }
+
+.titleVideo-description {
+  margin-right: 45px;
+  width: 100%;
+  max-width: 225px; }
+  .titleVideo-description .description-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 12px;
+    margin-top: 8px; }
+    .titleVideo-description .description-btn .btn-download {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      max-width: 120px;
+      height: 31px;
+      border-radius: 4px;
+      background: #ED7839;
+      cursor: pointer; }
+      .titleVideo-description .description-btn .btn-download p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff; }
+    .titleVideo-description .description-btn .btn-star {
+      width: 43px;
+      height: 31px;
+      border-radius: 4px;
+      background: #ED7839;
+      cursor: pointer; }
+      .titleVideo-description .description-btn .btn-star p {
+        font-size: 16px;
+        font-weight: 900;
+        color: #ffffff; }
+    .titleVideo-description .description-btn .btn-doi {
+      width: 43px;
+      height: 31px;
+      border-radius: 4px;
+      background: #ED7839;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .titleVideo-description .description-btn .btn-doi div {
+        width: 19px;
+        height: 19px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; }
+        .titleVideo-description .description-btn .btn-doi div p {
+          color: #ED7839;
+          font-weight: 900; }
+
+.titleVideo-link {
+  margin-left: 5px; }
+  .titleVideo-link a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ED7839;
+    letter-spacing: 0.05em; }
+
+/*# sourceMappingURL=titleVideo.css.map */
