@@ -1,5 +1,6 @@
 import MenuNav from "./Components/MenuNav";
 import Header from "./Components/Header";
+import TitleVideo from "./Components/TitleVideo";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <MenuNav />
       <div>
         <Header />
+        <TitleVideo />
       </div>
     </>
   );
