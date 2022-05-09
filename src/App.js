@@ -4,6 +4,7 @@ import TitleVideo from "./Components/TitleVideo";
 import VideoDescription from "./Components/VideoDescription";
 import Resumo from "./Components/Resumo";
 import TopicoForm from "./Components/TopicoForm";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <VideoDescription />
         <Resumo />
         <TopicoForm />
+        <Footer />
       </div>
     </>
   );
