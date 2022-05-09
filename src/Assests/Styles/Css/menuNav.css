@@ -53,6 +53,8 @@
 
 .menuNav-sidebar li {
   width: 100%; }
+  .menuNav-sidebar li:hover {
+    background: #FDF1EB; }
   .menuNav-sidebar li button {
     width: 100%;
     display: flex;

@@ -164,8 +164,7 @@
                 &::after{
                     content: counter(contador);
                     margin-left: 3px;
-                    font-size: 6px;
-                    position: absolute;
+                    font-size: 6px;                    
 
                 }
             }
@@ -187,13 +186,16 @@
             color: #949494;
             letter-spacing: 0.02em;
             counter-increment: contador;
+            margin-bottom: 2px;
             
 
             &::before{
                 content: counter(contador);
                 margin-left: -5px;
+                margin-right: 2px;
+                
                 font-size: 6px;
-                position: absolute;
+                
 
             }
 

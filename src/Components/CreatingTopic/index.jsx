@@ -12,8 +12,8 @@ const CreatingTopic = ({textarea, onClick}) =>{
 
 
     const formSchema = yup.object().shape({
-        // textarea: yup.string().min(3).max(500),
-        // subject: yup.string().min(6)
+        subject: yup.string().min(6),
+        textarea: yup.string().min(3).max(500)       
 
     });
 
@@ -22,7 +22,7 @@ const CreatingTopic = ({textarea, onClick}) =>{
     });
 
     const formSubmit = (data) => {
-        // textarea(data.textarea)
+        textarea(data.textarea)
         reset();
 
     }

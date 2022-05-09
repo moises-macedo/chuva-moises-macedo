@@ -40,6 +40,10 @@
 
     li{
         width: 100%;
+        &:hover{
+            background: $color-background-menu;
+
+        }
 
         button{
             width: 100%;
