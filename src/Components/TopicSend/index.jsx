@@ -1,7 +1,7 @@
 import { FaCheckDouble } from "react-icons/fa";
 import "../../Assests/Styles/Css/topicSend.css";
 
-const TopicSend = () => {
+const TopicSend = ({onClick}) => {
     return(
         <div className="container--send">
             <div className="send-title">
@@ -14,7 +14,7 @@ const TopicSend = () => {
                 <a href="#">Descubra outros trabalhos!</a>
             </div>
             <div className="send-btn">
-                <button>
+                <button onClick={onClick}>
                     <p>criar novo tópico</p>
                 </button>
             </div>
