@@ -42,6 +42,7 @@ $font-externa:'Segoe UI';
 }
 
 .container--page-main{
+    height: 100vh;
     overflow-y:auto;
     scroll-behavior: smooth;
 }

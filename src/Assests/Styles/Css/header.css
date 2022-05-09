@@ -20,6 +20,7 @@
   grid-template-columns: 220px 1fr; }
 
 .container--page-main {
+  height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth; }
 

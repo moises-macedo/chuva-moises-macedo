@@ -2,7 +2,7 @@
 
 .container-topic {
     width: 1058px;
-    height: 621px;
+
     border: 1px solid $color-gray-20;
     border-radius: 3px;
     margin-left: 43px;
@@ -84,7 +84,7 @@
     height: 1px;
     background: #E7E7E7;
     margin-bottom: 30px;
-    
+
 
 }
 
@@ -95,7 +95,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: -16px;
-    
+
 
     button {
         cursor: pointer;
@@ -131,73 +131,83 @@
     margin-bottom: 15px;
     margin-left: 15px;
     width: 1027px;
-    height: 148px;
+    height: 100%;
+    min-height: 148px;
+    max-height: 200px;
     border: 1px solid $color-border;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
-    
+
 }
 
-.static-title{
+.static-title {
     margin-left: 24px;
-    h4{
+
+    h4 {
         font-family: $font-text;
         font-weight: 700;
         font-size: 16px;
         color: $color-orange-50;
         margin-bottom: 3px;
     }
-    p{
+
+    p {
         font-family: $font-text;
         font-weight: 500;
         font-size: 12px;
         color: #5c5c5c;
-        
+
     }
 }
 
-.static-topic{
+.static-topic {
     width: 980px;
     height: 35px;
     text-align: start;
     margin-left: 24px;
-    p{
+
+    p {
         font-family: $font-text;
         font-weight: 400;
         font-size: 14px;
         color: #4d4d4d;
     }
-     
+
 }
-.static-interaction{
+
+.static-interaction {
     display: flex;
     margin-left: 24px;
     height: 19px;
 }
-.interaction-circle{
+
+.interaction-circle {
     display: flex;
     flex-direction: column;
     height: 19px;
     margin-bottom: 18px;
 
-    span{
+    span {
         height: 4px;
         width: 4px;
         background: $color-orange-50;
         border-radius: 50%;
         margin: 1px;
-
+        cursor: pointer;
+        
+        
     }
+    
 }
 
-.interaction-btn{
+.interaction-btn {
     margin-left: 10px;
     width: 27px;
     height: 19px;
-    background:$color-orange-50;
+    background: $color-orange-50;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,28 +216,31 @@
     border-radius: 2px;
     cursor: pointer;
 
-    p{
+    p {
         font-size: 14px;
         margin-top: 4px;
         color: $color-white;
     }
-    .givenLike{
+
+    .givenLike {
         color: red;
     }
 }
 
-.interaction-users{
+.interaction-users {
     display: flex;
     align-items: center;
     margin-left: 15px;
     height: 19px;
-    span{
+
+    span {
         margin-right: 5px;
         font-family: $font-externa;
         font-weight: 400;
-        color: #757575;        
+        color: #757575;
     }
-    p{
+
+    p {
         font-family: $font-externa;
         font-weight: 400;
         color: #757575;
