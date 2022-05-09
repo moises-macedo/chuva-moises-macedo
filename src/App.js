@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import TitleVideo from "./Components/TitleVideo";
 import VideoDescription from "./Components/VideoDescription";
 import Resumo from "./Components/Resumo";
+import TopicoForm from "./Components/TopicoForm";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
         <Header />
         <TitleVideo />
         <VideoDescription />
-        <Resumo/>
+        <Resumo />
+        <TopicoForm />
       </div>
     </>
   );
