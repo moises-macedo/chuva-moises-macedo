@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/src/Assests/Fonts/Segoe/Segoe-UI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 220px 1fr; }
+
+.container--page-main {
+  overflow-y: auto;
+  scroll-behavior: smooth; }
+
+.container-topic {
+  width: 1058px;
+  height: 621px;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  margin-left: 43px;
+  margin-top: 30px; }
+
+.topic-title {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #ECECEC;
+  background: #FDF1EB;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .topic-title h3 {
+    margin-left: 16px;
+    color: #4e4e4e;
+    font-weight: 500;
+    font-size: 20px; }
+
+.feed-title {
+  width: 1027px;
+  margin-top: 15px;
+  height: 22px;
+  text-align: center; }
+  .feed-title h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ED7839; }
+
+.feed-img {
+  width: 1027px;
+  margin-top: 27px;
+  margin-bottom: 35px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .feed-img img {
+    margin-right: 50px; }
+  .feed-img img:nth-child(n+3) {
+    margin-right: 0px; }
+
+.feed-info {
+  width: 1027px;
+  height: 39px;
+  margin-bottom: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .feed-info p {
+    width: 626px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #595959;
+    text-align: center; }
+
+.feed-line {
+  width: 1027px;
+  margin-left: 15.5px;
+  height: 1px;
+  background: #E7E7E7; }
+
+.feed-buttonCreate {
+  width: 1027px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -16px; }
+  .feed-buttonCreate button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 32px;
+    width: 133px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24); }
+    .feed-buttonCreate button p {
+      color: #ffffff;
+      font-size: 30px;
+      margin-left: 5px; }
+    .feed-buttonCreate button p:nth-child(n+2) {
+      font-family: "Quicksand", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #ffffff; }
+
+.feed-static {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 1027px;
+  height: 148px;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.static-title {
+  margin-left: 24px; }
+  .static-title h4 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ED7839;
+    margin-bottom: 3px; }
+  .static-title p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #5c5c5c; }
+
+.static-topic {
+  width: 980px;
+  height: 35px;
+  text-align: start;
+  margin-left: 24px; }
+  .static-topic p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4d4d4d; }
+
+.static-interaction {
+  display: flex;
+  margin-left: 24px;
+  height: 19px; }
+
+.interaction-circle {
+  display: flex;
+  flex-direction: column;
+  height: 19px;
+  margin-bottom: 18px; }
+  .interaction-circle span {
+    height: 4px;
+    width: 4px;
+    background: #ED7839;
+    border-radius: 50%;
+    margin: 1px; }
+
+.interaction-btn {
+  margin-left: 10px;
+  width: 27px;
+  height: 19px;
+  background: #ED7839;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  cursor: pointer; }
+  .interaction-btn p {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #ffffff; }
+  .interaction-btn .givenLike {
+    color: red; }
+
+.interaction-users {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  height: 19px; }
+  .interaction-users span {
+    margin-right: 5px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #757575; }
+  .interaction-users p {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #757575; }
+
+/*# sourceMappingURL=topicoForm.css.map */

@@ -2,80 +2,99 @@ import Hand from "../../Assests/Img/hand.png";
 import IconQa from "../../Assests/Img/icon-qa.png";
 import Users from "../../Assests/Img/users.png";
 import { MdFavorite } from "react-icons/md";
+import "../../Assests/Styles/Css/topicoForm.css";
+import { useState } from "react";
 
 
 const TopicoForm = () => {
+    const [isLike, setIsLike] = useState(false);
+    const [isLikeTwo, setIsLiketwo] = useState(false);
+    const [isLikebtnOn, setIsLikeBtnOn] = useState(1);  
+    const [isLikebtn, setIsLikeBtn] = useState(1);  
+
+    const handleLike = () =>{
+        
+        setIsLiketwo(!isLikeTwo);
+        setIsLikeBtn(isLikeTwo=== false?isLikebtn + 1 : isLikebtn -1 ) 
+    }
+    const handleLikeOn = () =>{
+        setIsLike(!isLike);        
+        setIsLikeBtnOn(isLike === false?isLikebtnOn + 1 : isLikebtnOn -1 ) 
+    }
+
     return (
-        <div>
-            <div>
+        <div className="container-topic">
+            <div className="topic-title">
                 <h3>Discussões</h3>
             </div>
-            <div>
-                <div>
+            <div className="topic-feed">
+                <div className="feed-title">
                     <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
                 </div>
-                <div>
+                <div className="feed-img">
                     <img src={Hand} alt="recepção" />
                     <img src={IconQa} alt="Garantia da Qualidade" />
                     <img src={Users} alt="União de usuários" />
                 </div>
-                <div>
+                <div className="feed-info">
                     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                 </div>
-                <span></span>
-                <button>
-                    <p>+</p>
-                    <p>criar tópico</p>
-                </button>
-                <div>
-                    <div>
+                <div className="feed-line"></div>
+                <div className="feed-buttonCreate">
+                    <button>
+                        <p>+</p>
+                        <p>criar tópico</p>
+                    </button>
+                </div>
+                <div className="feed-static">
+                    <div className="static-title">
                         <h4>Assunto da pergunta aparece aqui</h4>
                         <p>Carlos Henrique Santos</p>
                     </div>
-                    <div>
+                    <div className="static-topic">
                         <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                     </div>
-                    <div>
-                        <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div className="static-interaction">
+                        <div className="interaction-circle">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
                         </div>
-                        <button>
-                            <p><MdFavorite/></p>
+                        <button onClick={handleLikeOn} className="interaction-btn">
+                            <p className={isLike === true? "givenLike" : null}><MdFavorite /></p>
                         </button>
-                        <div>
-                            <span>1</span>
+                        <div className="interaction-users">
+                            <span>{isLikebtnOn}</span>
                             <p>like</p>
                         </div>
-                        <div>
+                        <div className="interaction-users">
                             <span>1</span>
                             <p>resposta</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className="feed-static">
+                    <div className="static-title">
                         <h4>Assunto da pergunta aparece aqui</h4>
                         <p>Carlos Henrique Santos</p>
-                    </div>
-                    <div>
+                    </div >
+                    <div className="static-topic">
                         <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                     </div>
-                    <div>
-                        <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div className="static-interaction">
+                        <div className="interaction-circle">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
                         </div>
-                        <button>
-                            <p><MdFavorite/></p>
+                        <button onClick={handleLike} className="interaction-btn">
+                            <p className={isLikeTwo === true? "givenLike" : null}><MdFavorite /></p>
                         </button>
-                        <div>
-                            <span>1</span>
+                        <div className="interaction-users">
+                            <span>{isLikebtn}</span>
                             <p>like</p>
                         </div>
-                        <div>
+                        <div className="interaction-users">
                             <span>1</span>
                             <p>resposta</p>
                         </div>
