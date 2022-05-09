@@ -101,7 +101,7 @@ const TopicoForm = () => {
                             <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                         </div>
                         <div className="static-interaction">
-                            <div className="interaction-circle" onClick={()=> setIsExpanded(!isExpanded)}>
+                            <div className="interaction-circle" >
                                 <span>&nbsp;</span>
                                 <span>&nbsp;</span>
                                 <span>&nbsp;</span>
@@ -114,14 +114,14 @@ const TopicoForm = () => {
                                 <p>like</p>
                             </div>
                             <div className="interaction-users">
-                                <span>1</span>
-                                <p>resposta</p>
+                                <span>4</span>
+                                <p onClick={()=> setIsExpanded(!isExpanded)} className="click-res">resposta</p>
                             </div>
                         </div>
                     </div>
 
                 ) : (
-                    <TopicExpanded />
+                    <TopicExpanded onClick={()=> setIsExpanded(!isExpanded)}/>
                 )}
 
             </div>

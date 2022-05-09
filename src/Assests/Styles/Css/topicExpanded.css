@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/src/Assests/Fonts/Segoe/Segoe-UI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 220px 1fr; }
+
+.container--page-main {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth; }
+
+.container--topicExpanded {
+  width: 1027px;
+  margin-left: 15.5px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  background: #ffffff; }
+
+.topicExpanded-primary {
+  margin-left: 23px;
+  margin-top: 18px;
+  margin-bottom: 10px; }
+
+.primary-title h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ED7839;
+  margin-bottom: 4px; }
+.primary-title p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #5c5c5c; }
+
+.primary-post {
+  width: 980px;
+  height: 35px;
+  text-align: start;
+  margin-top: 10px; }
+  .primary-post p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4d4d4d; }
+
+.primary-interaction {
+  display: flex;
+  margin-top: 29px;
+  height: 19px; }
+
+.primary--interaction-circle {
+  display: flex;
+  flex-direction: column;
+  height: 19px;
+  margin-bottom: 18px; }
+  .primary--interaction-circle span {
+    height: 4px;
+    width: 4px;
+    background: #ED7839;
+    border-radius: 50%;
+    margin: 1px;
+    cursor: pointer; }
+
+.primary--interaction-btn {
+  margin-left: 10px;
+  width: 27px;
+  height: 19px;
+  background: #ED7839;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  cursor: pointer; }
+  .primary--interaction-btn .givenLike {
+    color: red; }
+  .primary--interaction-btn p {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #ffffff; }
+
+.primary--interaction-users {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  height: 19px; }
+  .primary--interaction-users span {
+    margin-right: 5px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #757575;
+    font-size: 14px; }
+  .primary--interaction-users p {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: #757575;
+    font-size: 14px; }
+
+.topicExpanded-res {
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+  background: #F8F8F8;
+  height: 100%;
+  min-height: 131px;
+  max-height: 184px; }
+  .topicExpanded-res:nth-child(n+5) {
+    border-bottom: none; }
+
+.res-post {
+  color: #4d4d4d;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 23px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.res-title {
+  margin-left: 23px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .res-title p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #5c5c5c; }
+
+.title-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 23px; }
+  .title-icons p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ED7839;
+    margin-right: 33px; }
+  .title-icons span {
+    font-weight: 900;
+    color: #ED7839;
+    font-size: 20px; }
+
+.topicExpanded-exclusive {
+  margin-left: 23px; }
+  .topicExpanded-exclusive p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #5c5c5c;
+    margin-top: 18px; }
+    .topicExpanded-exclusive p:nth-child(n+2) {
+      color: #4d4d4d;
+      font-size: 14px;
+      font-weight: 400; }
+    .topicExpanded-exclusive p:nth-child(n+3) {
+      margin-bottom: 15px;
+      margin-top: 5px; }
+
+/*# sourceMappingURL=topicExpanded.css.map */
