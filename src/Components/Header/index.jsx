@@ -23,6 +23,7 @@ const Header = () => {
                  </div>
                  <div className="user-img">
                      <img src={User} alt="usuário" />
+                     <span>2</span>
                  </div>
              </div>
         </div>
