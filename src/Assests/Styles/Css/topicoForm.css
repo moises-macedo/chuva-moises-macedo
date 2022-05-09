@@ -71,7 +71,7 @@
 .feed-info {
   width: 1027px;
   height: 39px;
-  margin-bottom: 31px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -87,7 +87,8 @@
   width: 1027px;
   margin-left: 15.5px;
   height: 1px;
-  background: #E7E7E7; }
+  background: #E7E7E7;
+  margin-bottom: 30px; }
 
 .feed-buttonCreate {
   width: 1027px;
@@ -95,8 +96,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -16px; }
+  margin-bottom: -16px; }
   .feed-buttonCreate button {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +119,7 @@
       color: #ffffff; }
 
 .feed-static {
-  margin-top: 15px;
+  margin-bottom: 15px;
   margin-left: 15px;
   width: 1027px;
   height: 148px;

@@ -4,6 +4,7 @@ import Users from "../../Assests/Img/users.png";
 import { MdFavorite } from "react-icons/md";
 import "../../Assests/Styles/Css/topicoForm.css";
 import { useState } from "react";
+import CreatingTopic from "../CreatingTopic";
 
 
 const TopicoForm = () => {
@@ -11,6 +12,7 @@ const TopicoForm = () => {
     const [isLikeTwo, setIsLiketwo] = useState(false);
     const [isLikebtnOn, setIsLikeBtnOn] = useState(1);  
     const [isLikebtn, setIsLikeBtn] = useState(1);  
+    const [btnCreating, setBtnCreating] = useState(false);
 
     const handleLike = () =>{
         
@@ -27,7 +29,10 @@ const TopicoForm = () => {
             <div className="topic-title">
                 <h3>Discussões</h3>
             </div>
+            
             <div className="topic-feed">
+            {btnCreating === false? (
+                <>
                 <div className="feed-title">
                     <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
                 </div>
@@ -39,13 +44,17 @@ const TopicoForm = () => {
                 <div className="feed-info">
                     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                 </div>
-                <div className="feed-line"></div>
                 <div className="feed-buttonCreate">
-                    <button>
+                    <button onClick={()=> setBtnCreating(true)}>
                         <p>+</p>
                         <p>criar tópico</p>
                     </button>
                 </div>
+                </>
+                
+                ):(<CreatingTopic/>)}
+                
+                <div className="feed-line"></div>
                 <div className="feed-static">
                     <div className="static-title">
                         <h4>Assunto da pergunta aparece aqui</h4>
