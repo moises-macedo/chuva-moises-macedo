@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 220px 1fr; }
+
+.container--page-main {
+  overflow-y: auto;
+  scroll-behavior: smooth; }
+
+.resumo-title {
+  width: 1058px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ECECEC;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-top: 30px;
+  margin-left: 44px;
+  background: #FDF1EB; }
+  .resumo-title h3 {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #4e4e4e; }
+
+.resumo-falseActive {
+  width: 1058px;
+  height: 144px;
+  margin-left: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC; }
+  .resumo-falseActive .falseActive-paragraph {
+    margin-top: 15px;
+    height: 114px;
+    width: 100%;
+    max-width: 1028px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #5C5C5C;
+    align-self: stretch;
+    text-align: justify;
+    letter-spacing: 0.02em; }
+    .resumo-falseActive .falseActive-paragraph button {
+      background: none;
+      cursor: pointer; }
+      .resumo-falseActive .falseActive-paragraph button p {
+        font-size: 14px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: #ED7839; }
+
+.resumo-trueActive {
+  width: 1058px;
+  height: 515px;
+  margin-left: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC; }
+  .resumo-trueActive p {
+    margin-left: 15px;
+    width: 100%;
+    max-width: 1028px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #5C5C5C;
+    align-self: stretch;
+    text-align: justify;
+    letter-spacing: 0.02em; }
+    .resumo-trueActive p button {
+      background: none;
+      cursor: pointer; }
+      .resumo-trueActive p button span {
+        font-size: 14px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: #ED7839; }
+
+/*# sourceMappingURL=resumo.css.map */
