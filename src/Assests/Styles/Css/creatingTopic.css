@@ -134,6 +134,7 @@
   background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
   border-bottom-right-radius: 3px; }
   .formatted-send button {
+    cursor: pointer;
     background: transparent; }
     .formatted-send button p {
       font-family: "Quicksand", sans-serif;

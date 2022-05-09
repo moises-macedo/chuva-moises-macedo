@@ -5,6 +5,7 @@ import { MdFavorite } from "react-icons/md";
 import "../../Assests/Styles/Css/topicoForm.css";
 import { useState } from "react";
 import CreatingTopic from "../CreatingTopic";
+import TopicSend from "../TopicSend";
 
 
 const TopicoForm = () => {
@@ -13,6 +14,8 @@ const TopicoForm = () => {
     const [isLikebtnOn, setIsLikeBtnOn] = useState(1);  
     const [isLikebtn, setIsLikeBtn] = useState(1);  
     const [btnCreating, setBtnCreating] = useState(false);
+    const [btnSend, setBtnSend] = useState(false);
+    
 
     const handleLike = () =>{
         
@@ -22,6 +25,9 @@ const TopicoForm = () => {
     const handleLikeOn = () =>{
         setIsLike(!isLike);        
         setIsLikeBtnOn(isLike === false?isLikebtnOn + 1 : isLikebtnOn -1 ) 
+    }
+    const handleSend = () => {
+        setBtnSend(!btnSend);
     }
 
     return (
@@ -52,7 +58,7 @@ const TopicoForm = () => {
                 </div>
                 </>
                 
-                ):(<CreatingTopic/>)}
+                ): btnSend === false ?(<CreatingTopic onClick={()=>setBtnSend(!btnSend)}/>): <TopicSend/>}
                 
                 <div className="feed-line"></div>
                 <div className="feed-static">
