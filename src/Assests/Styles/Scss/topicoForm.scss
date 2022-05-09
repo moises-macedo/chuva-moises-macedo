@@ -62,7 +62,7 @@
 .feed-info {
     width: 1027px;
     height: 39px;
-    margin-bottom: 31px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +83,8 @@
     margin-left: 15.5px;
     height: 1px;
     background: #E7E7E7;
+    margin-bottom: 30px;
+    
 
 }
 
@@ -92,9 +94,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -16px;
+    margin-bottom: -16px;
+    
 
     button {
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -123,7 +127,8 @@
 }
 
 .feed-static {
-    margin-top: 15px;
+
+    margin-bottom: 15px;
     margin-left: 15px;
     width: 1027px;
     height: 148px;
@@ -131,7 +136,9 @@
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+
+    
 }
 
 .static-title{
