@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import "../../Assests/Styles/Css/creatingTopic.css"
 import { useState } from "react";
 
-const CreatingTopic = ({textarea}) =>{
+const CreatingTopic = ({textarea, onClick}) =>{
 
     const [btnBold, setBtnBold] = useState(false);
     const [btnItalic, setBtnItalic] = useState(false)
@@ -12,8 +12,8 @@ const CreatingTopic = ({textarea}) =>{
 
 
     const formSchema = yup.object().shape({
-        textarea: yup.string().min(3).max(500),
-        subject: yup.string().min(6)
+        // textarea: yup.string().min(3).max(500),
+        // subject: yup.string().min(6)
 
     });
 
@@ -22,7 +22,7 @@ const CreatingTopic = ({textarea}) =>{
     });
 
     const formSubmit = (data) => {
-        textarea(data.textarea)
+        // textarea(data.textarea)
         reset();
 
     }
@@ -52,8 +52,8 @@ const CreatingTopic = ({textarea}) =>{
                                 <p>I</p>
                             </button>
                         </div>
-                        <div className="formatted-send" >
-                            <button>
+                        <div className="formatted-send" onClick={onClick} >
+                            <button >
                                 <p>Enviar</p>
                             </button>
                         </div>
