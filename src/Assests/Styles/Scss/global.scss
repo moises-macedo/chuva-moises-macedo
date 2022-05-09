@@ -8,9 +8,16 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box; 
-    font-family: 'Roboto', sans-serif; 
-    
+    font-family: 'Roboto', sans-serif;     
 
+}
+
+@font-face {
+    font-family:'Segoe UI';
+    src: url('/src/Assests/Fonts/Segoe/Segoe-UI.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 $color-orange-20:#FFB354;
@@ -26,6 +33,7 @@ $color-border-header:#CCCCCC;
 $color-background-menu:#FDF1EB;
 $color-red-40:#F85959;
 $font-text: 'Quicksand', sans-serif;
+$font-externa:'Segoe UI';
 
 #root{
     height: 100vh;
