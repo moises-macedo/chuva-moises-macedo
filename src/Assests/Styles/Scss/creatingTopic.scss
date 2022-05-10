@@ -3,7 +3,8 @@
 
 .container--creating {
 
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     height: 245px;
     margin-left: 15.5px;
     margin-top: 15px;
@@ -13,7 +14,8 @@
 
 .creating-title {
     margin-left: 45.5px;
-    width: 965px;
+    width: 100%;
+    max-width: 965px;
     height: 18px;
 
     p {
@@ -27,8 +29,8 @@
 }
 
 .form-subject {
-    width: 1027px;
-
+    width: 100%;
+    max-width: 1027px;
     display: flex;
     flex-direction: column;
     margin-top: 22px;
@@ -70,7 +72,8 @@
 .form-content {
     display: flex;
     flex-direction: column;
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     margin-top: 10px;
 
     label {
@@ -82,8 +85,9 @@
     textarea {
         resize: none;
         height: 83px;
-        width: 1027px;
-        border: 1px solid $color-border-header;        
+        width: 100%;
+        max-width: 1027px;
+        border: 1px solid $color-border-header;
         padding-left: 5px;
         padding-top: 5px;
         text-align: justify;
@@ -96,16 +100,19 @@
         }
 
     }
-    .btnBold{
+
+    .btnBold {
         font-weight: 900;
     }
-    .btnItalic{
+
+    .btnItalic {
         font-style: italic;
     }
 }
 
 .form-btn {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     height: 31px;
     display: flex;
     align-items: center;
@@ -118,30 +125,36 @@
     border-bottom-right-radius: 3px;
 
 }
-.btn-formatted{
+
+.btn-formatted {
     margin-left: 30px;
-    
+
 }
-.formatted-bold{
+
+.formatted-bold {
     margin-right: 30px;
     cursor: pointer;
-    p{
+
+    p {
         color: #474747;
         font-weight: bold;
         font-size: 16px;
     }
 }
-.formatted-italic{
+
+.formatted-italic {
     cursor: pointer;
-    p{
+
+    p {
         color: #474747;
         font-weight: bold;
         font-size: 16px;
-        font-style: italic; 
+        font-style: italic;
     }
 
 }
-.formatted-send{
+
+.formatted-send {
     cursor: pointer;
     height: 31px;
     width: 205px;
@@ -150,15 +163,23 @@
     justify-content: center;
     background: linear-gradient(180deg, $color-orange-20 0%, $color-orange-30 100%);
     border-bottom-right-radius: 3px;
-    button{
+
+    button {
         cursor: pointer;
-        
-        background:transparent;
-        p{
+
+        background: transparent;
+
+        p {
             font-family: $font-text;
             font-weight: 700;
             font-size: 15px;
             color: $color-white;
         }
+    }
+}
+// media para telas menores que 1365px
+@media (max-width: 1365px) {
+    .container--creating{
+        width: 95%;
     }
 }

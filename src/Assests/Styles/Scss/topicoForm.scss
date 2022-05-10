@@ -1,8 +1,8 @@
 @import "./global.scss";
 
 .container-topic {
-    width: 1058px;
-
+    width: 100%;
+    max-width: 1058px;
     border: 1px solid $color-gray-20;
     border-radius: 3px;
     margin-left: 43px;
@@ -28,7 +28,8 @@
 }
 
 .feed-title {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     margin-top: 15px;
     height: 22px;
     text-align: center;
@@ -41,7 +42,8 @@
 }
 
 .feed-img {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     margin-top: 27px;
     margin-bottom: 35px;
     height: 50px;
@@ -60,7 +62,8 @@
 }
 
 .feed-info {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     height: 39px;
     margin-bottom: 15px;
     display: flex;
@@ -79,7 +82,8 @@
 }
 
 .feed-line {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     margin-left: 15.5px;
     height: 1px;
     background: #E7E7E7;
@@ -89,7 +93,8 @@
 }
 
 .feed-buttonCreate {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     height: 32px;
     display: flex;
     justify-content: center;
@@ -130,15 +135,16 @@
 
     margin-bottom: 15px;
     margin-left: 15px;
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     height: 100%;
-    min-height: 148px;
+    min-height: 175px;
     max-height: 200px;
     border: 1px solid $color-border;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
 
 
@@ -165,7 +171,8 @@
 }
 
 .static-topic {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     height: 35px;
     text-align: start;
     margin-left: 24px;
@@ -198,10 +205,10 @@
         border-radius: 50%;
         margin: 1px;
         cursor: pointer;
-        
-        
+
+
     }
-    
+
 }
 
 .interaction-btn {
@@ -246,14 +253,32 @@
         font-weight: 400;
         color: #757575;
 
-        
+
     }
-    
-    
-    
-}   
-.click-res{
+
+
+
+}
+
+.click-res {
     cursor: pointer;
 }
 
-
+// media para telas menores 365px
+@media (max-width: 1365px) {
+    .container-topic{
+        width: 95%;
+    }
+    .feed-static{
+        width: 95%;
+    }
+    .static-topic{
+        width: 95%;
+    }
+    .feed-line{
+        width: 95%;
+    }
+    .feed-img{
+        width: 95%;
+    }
+}

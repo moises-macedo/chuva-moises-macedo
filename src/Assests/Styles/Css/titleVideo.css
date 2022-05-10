@@ -36,7 +36,7 @@
   width: 100%;
   max-width: 786px; }
   .titleVideo-title h2 {
-    font-weight: 900, black;
+    font-weight: 900;
     font-size: 20px;
     color: #ED7839;
     line-height: 25px;
@@ -75,7 +75,10 @@
       .titleVideo-description .description-btn .btn-star p {
         font-size: 16px;
         font-weight: 900;
-        color: #ffffff; }
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
     .titleVideo-description .description-btn .btn-doi {
       width: 43px;
       height: 31px;

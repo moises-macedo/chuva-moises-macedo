@@ -22,7 +22,8 @@
 }
 
 .resumo-falseActive {
-    width: 1058px;
+    width: 100%;
+    max-width: 1058px;
     height: 144px;
     margin-left: 44px;
     display: flex;
@@ -32,7 +33,7 @@
     border-right: 1px solid $color-gray-20;
     border-bottom: 1px solid $color-gray-20;
     border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px ;
+    border-bottom-right-radius: 3px;
 
     .falseActive-paragraph {
         margin-top: 15px;
@@ -64,8 +65,9 @@
 
 }
 
-.resumo-trueActive{
-    width: 1058px;
+.resumo-trueActive {
+    width: 100%;
+    max-width: 1058px;
     height: 515px;
     margin-left: 44px;
     display: flex;
@@ -76,9 +78,9 @@
     border-right: 1px solid $color-gray-20;
     border-bottom: 1px solid $color-gray-20;
     border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px ;
+    border-bottom-right-radius: 3px;
 
-    p{
+    p {
         margin-left: 15px;
         width: 100%;
         max-width: 1028px;
@@ -90,6 +92,7 @@
         align-self: stretch;
         text-align: justify;
         letter-spacing: 0.02em;
+
         button {
             background: none;
             cursor: pointer;
@@ -103,5 +106,39 @@
         }
 
     }
+
+}
+
+// media para telas menores que 1365px
+
+@media (max-width: 1365px) {
+    .resumo-title {
+        width: 95%;
+    }
+
+    .resumo-falseActive {
+        width: 95%;
+        height: 200px;
+        .falseActive-paragraph {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+        
+    }
+    .resumo-trueActive{
+        width: 95%;
+        height: 600px;
+
+        p {
+            
+            margin-left: 10px;
+            margin-right: 50px;
+            word-break: break-all;
+            width: 97%;
+        }
+
+    }
+
 
 }

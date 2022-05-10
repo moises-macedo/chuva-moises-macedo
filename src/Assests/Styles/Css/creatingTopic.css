@@ -25,7 +25,8 @@
   scroll-behavior: smooth; }
 
 .container--creating {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 245px;
   margin-left: 15.5px;
   margin-top: 15px;
@@ -33,7 +34,8 @@
 
 .creating-title {
   margin-left: 45.5px;
-  width: 965px;
+  width: 100%;
+  max-width: 965px;
   height: 18px; }
   .creating-title p {
     font-size: 14px;
@@ -43,7 +45,8 @@
     text-align: center; }
 
 .form-subject {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   display: flex;
   flex-direction: column;
   margin-top: 22px; }
@@ -70,7 +73,8 @@
 .form-content {
   display: flex;
   flex-direction: column;
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   margin-top: 10px; }
   .form-content label {
     font-size: 16px;
@@ -79,7 +83,8 @@
   .form-content textarea {
     resize: none;
     height: 83px;
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     border: 1px solid #CCCCCC;
     padding-left: 5px;
     padding-top: 5px;
@@ -94,7 +99,8 @@
     font-style: italic; }
 
 .form-btn {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 31px;
   display: flex;
   align-items: center;
@@ -142,5 +148,9 @@
       font-weight: 700;
       font-size: 15px;
       color: #ffffff; }
+
+@media (max-width: 1365px) {
+  .container--creating {
+    width: 95%; } }
 
 /*# sourceMappingURL=creatingTopic.css.map */
