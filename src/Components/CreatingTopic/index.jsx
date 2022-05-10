@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import "../../Assests/Styles/Css/creatingTopic.css"
 import { useState } from "react";
 
-const CreatingTopic = ({textarea, onClick}) =>{
+const CreatingTopic = ({onClick}) =>{
 
     const [btnBold, setBtnBold] = useState(false);
     const [btnItalic, setBtnItalic] = useState(false)
@@ -17,13 +17,12 @@ const CreatingTopic = ({textarea, onClick}) =>{
 
     });
 
-    const { register, reset, handleSubmit, formState: {errors}} = useForm({
+    const { register, reset, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(formSchema)
     });
 
-    const formSubmit = (data) => {
-        textarea(data.textarea)
-        reset();
+    const formSubmit = (data) => {       
+        console.log(data)
 
     }
     return(
@@ -53,7 +52,7 @@ const CreatingTopic = ({textarea, onClick}) =>{
                             </button>
                         </div>
                         <div className="formatted-send" onClick={onClick} >
-                            <button >
+                            <button type="button" >
                                 <p>Enviar</p>
                             </button>
                         </div>

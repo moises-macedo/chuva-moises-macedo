@@ -9,6 +9,7 @@ import TopicSend from "../TopicSend";
 import TopicExpanded from "../TopicExpanded";
 
 
+
 const TopicoForm = () => {
     const [isLike, setIsLike] = useState(false);
     const [isLikeTwo, setIsLiketwo] = useState(false);
@@ -16,7 +17,8 @@ const TopicoForm = () => {
     const [isLikebtn, setIsLikeBtn] = useState(1);
     const [btnCreating, setBtnCreating] = useState(false);
     const [btnSend, setBtnSend] = useState(false);
-    const [isExpanded, setIsExpanded] = useState(false)
+    const [isExpanded, setIsExpanded] = useState(false);
+    
 
 
     const handleLike = () => {
@@ -117,7 +119,7 @@ const TopicoForm = () => {
                                 <span>4</span>
                                 <p onClick={()=> setIsExpanded(!isExpanded)} className="click-res">resposta</p>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
 
                 ) : (
