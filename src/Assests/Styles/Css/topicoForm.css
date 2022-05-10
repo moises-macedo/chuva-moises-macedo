@@ -238,5 +238,17 @@
 @media (max-width: 1000px) {
   .container-topic {
     margin-left: 15px; } }
+@media (max-width: 780px) {
+  .feed-static {
+    margin-left: 12.5px; }
+
+  .static-topic {
+    margin-left: 12.5px; }
+
+  .feed-line {
+    margin-left: 12.5px; }
+
+  .feed-img {
+    margin-left: 12.5px; } }
 
 /*# sourceMappingURL=topicoForm.css.map */

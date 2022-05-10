@@ -129,3 +129,9 @@
         margin-top: 15px;
     }
 }
+//media para tleas menores que 768px
+@media (max-width: 768px) {
+    .titleVideo-description {
+        margin-right: 15px;       
+    }
+}

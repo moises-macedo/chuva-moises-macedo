@@ -55,7 +55,6 @@
 .primary-post {
   width: 100%;
   max-width: 980px;
-  height: 35px;
   text-align: start;
   margin-top: 10px; }
   .primary-post p {
@@ -121,10 +120,7 @@
 .topicExpanded-res {
   border-top: 1px solid #E7E7E7;
   border-bottom: 1px solid #E7E7E7;
-  background: #F8F8F8;
-  height: 100%;
-  min-height: 131px;
-  max-height: 184px; }
+  background: #F8F8F8; }
   .topicExpanded-res:nth-child(n+5) {
     border-bottom: none; }
 
@@ -183,5 +179,8 @@
 @media (max-width: 1365px) {
   .container--topicExpanded {
     width: 95%; } }
+@media (max-width: 780px) {
+  .container--topicExpanded {
+    margin-left: 12.5px; } }
 
 /*# sourceMappingURL=topicExpanded.css.map */

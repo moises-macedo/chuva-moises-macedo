@@ -117,7 +117,7 @@
     max-height: 120px; } }
 @media (max-width: 768px) {
   .container--header {
-    max-height: 150px; }
+    max-height: 200px; }
 
   .header-info {
     flex-direction: column;

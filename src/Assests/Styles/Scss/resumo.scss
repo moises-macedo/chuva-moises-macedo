@@ -24,7 +24,8 @@
 .resumo-falseActive {
     width: 100%;
     max-width: 1058px;
-    height: 144px;
+    height: 100%;
+    min-height: 144px;
     margin-left: 44px;
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@
 
     .falseActive-paragraph {
         margin-top: 15px;
-        height: 114px;
+        // height: 114px;
         width: 100%;
         max-width: 1028px;
         font-family: $font-text;
@@ -153,5 +154,20 @@
     }
     .resumo-title {
         margin-left: 15px;
+    }
+}
+//media para tleas menores que 768px
+@media (max-width: 768px) {
+    .titleVideo-description {
+        margin-right: 15px;       
+    }
+    .resumo-falseActive{
+        height: 100%;
+    }
+    .resumo-trueActive{        
+        height: 100%;
+        .falseActive-paragraph {
+            height: 0;
+        }
     }
 }
