@@ -1,6 +1,6 @@
 @import "./global.scss";
 
-.container--header{
+.container--header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,33 +9,35 @@
     align-items: center;
 }
 
-.header-description{
+.header-description {
     margin-left: 36px;
 
-    p{
+    p {
         font-size: 14px;
         font-weight: 400;
         margin-top: 5px;
         color: $color-btn-nav;
 
-        &:nth-child(3){
-            
+        &:nth-child(3) {
+
             margin-top: 0;
             margin-bottom: 4px;
         }
 
     }
-    h3{
+
+    h3 {
         font-size: 22px;
         font-weight: 400;
         color: $color-btn-nav;
         margin-top: 2px;
-        height: 26px;   
+
 
     }
 
 }
-.header-language{
+
+.header-language {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -44,17 +46,20 @@
     height: 34px;
     border: 1px solid $color-border-header;
     border-radius: 3px;
-    background:none;
-    p{
+    background: none;
+
+    p {
         text-transform: uppercase;
         color: $color-gray-70;
     }
 }
-.header-user{
+
+.header-user {
     margin-right: 36px;
     display: flex;
-    .user-login{
-        h6{
+
+    .user-login {
+        h6 {
             font-family: $font-text;
             font-size: 14px;
             font-weight: 400;
@@ -62,7 +67,8 @@
             text-align: right;
             margin-right: 2px;
         }
-        p{
+
+        p {
             color: $color-gray-70;
             margin-right: 2px;
             font-size: 12px;
@@ -73,15 +79,18 @@
     }
 
 }
-.user-img{
+
+.user-img {
     margin-left: 5px;
     display: flex;
-    img{
+
+    img {
         border-radius: 50%;
-        
+
     }
-    div{
-        font-size: 10px;        
+
+    div {
+        font-size: 10px;
         background: $color-red-40;
         color: $color-white;
         width: 12px;
@@ -93,7 +102,18 @@
         margin-top: -2px;
 
     }
-    
-    
 
+
+
+}
+
+// media para telas menor 1250px
+
+@media (max-width: 1250px) {
+    .container--header {
+        height: 100px;
+    }
+    .header-user{
+        margin-left: 25px;
+    }
 }

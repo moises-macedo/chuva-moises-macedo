@@ -46,8 +46,7 @@
     font-size: 22px;
     font-weight: 400;
     color: #725C5C;
-    margin-top: 2px;
-    height: 26px; }
+    margin-top: 2px; }
 
 .header-language {
   display: flex;
@@ -96,5 +95,12 @@
     font-weight: 700;
     margin-left: -10px;
     margin-top: -2px; }
+
+@media (max-width: 1250px) {
+  .container--header {
+    height: 100px; }
+
+  .header-user {
+    margin-left: 25px; } }
 
 /*# sourceMappingURL=header.css.map */
