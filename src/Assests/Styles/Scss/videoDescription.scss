@@ -14,7 +14,7 @@
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    justify-content: space-between;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -303,22 +303,28 @@
 
 //media para tleas menores que 1050px
 @media (max-width: 1050px) {
-    .video-title{
+    .video-title {
         margin-left: 15px;
+        margin-top: 10px;
+        h2{
+            font-size: 20px;
+        }
     }
-    .videoDescription-video{
-        background-size:  700px;        
+
+    .videoDescription-video {
+        background-size: 700px;
         width: 90%;
-        height:392px
+        height: 392px
     }
 
 }
+
 //media para tleas menores que 1000px
 @media (max-width: 1000px) {
     .videoDescription-video {
         margin-left: 15px;
         width: 95%;
-        max-width: 700px;        
+        max-width: 700px;
     }
 
     .videoDescription-info-modal {
@@ -326,14 +332,104 @@
     }
 
 }
+
 //media para tleas menores que 780px
 @media (max-width: 780px) {
-    
-    .videoDescription-video{
-        background-size:  450px;        
+    .video-title {
+        margin-left: 15px;
+        margin-top: 10px;
+        max-width: 500px;
+        
+    }
+    .video-description{
+        margin-left: 15px;
+        margin-bottom: 30px;
+
+        .description-info{
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 18px;
+            }
+        } 
+    }
+
+    .videoDescription-video {
+        background-size: 520px;
         width: 90%;
-        height:252px
+        height: 290px;
+        margin-top: 15px;
+    }
+    
+}
+
+//media para tleas menores que 580px
+@media (max-width: 580px) {
+    .description-img {        
+        width: 64px;
+        height: 64px;
+        img {
+            width: 55px;
+            height: 57px;
+        }
+    }
+
+    .videoDescription-video {
+        background-size: 420px;
+        width: 90%;
+        height: 235px
+    }
+    .video-title {        
+        max-width: 400px;        
+    }
+    .video-description{
+        margin-bottom: 20px;
+
+        .description-info{
+            margin-left: 10px;
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        } 
     }
 
 }
 
+//media para tleas menores que 480px
+@media (max-width: 480px) {
+    .videoDescription-video {
+        background-size: 400px;
+        width: 90%;
+        height: 220px
+    }
+    
+    .videoDescription-info-modal {
+        margin-left: 7.5px;
+    }
+    .video-title {
+        margin-left: 7.5px;
+        max-width: 310px;
+        h2{
+            font-size:18px
+        }
+        
+    }
+    .video-description{
+        margin-left: 7.5px;
+        margin-bottom: 20px;
+        
+    }
+
+    .description-main-modal {
+        flex-direction: column;
+
+        li {
+            margin: 3px;
+        }
+    }
+
+}

@@ -227,3 +227,10 @@
         margin-left: 12.5px;
     }
 }
+// media para telas menor de 780px
+
+@media (max-width: 480px){
+    .container--topicExpanded {
+        margin-left: 7.5px;
+    }
+}

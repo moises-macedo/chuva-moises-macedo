@@ -149,5 +149,14 @@
     height: 100%; }
     .resumo-trueActive .falseActive-paragraph {
       height: 0; } }
+@media (max-width: 480px) {
+  .resumo-trueActive {
+    margin-left: 7.5px; }
+
+  .resumo-falseActive {
+    margin-left: 7.5px; }
+
+  .resumo-title {
+    margin-left: 7.5px; } }
 
 /*# sourceMappingURL=resumo.css.map */

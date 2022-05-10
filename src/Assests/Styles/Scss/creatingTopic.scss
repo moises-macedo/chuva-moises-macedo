@@ -189,3 +189,26 @@
         margin-left: 15px;
     }
 }
+// media para telas menores que 480px
+@media (max-width: 480px) {
+    .creating-title{
+        margin-left: 0;
+    }
+    .container--creating{
+        margin-left: 7.5px;
+    }
+    .form-subject{
+        input{
+            height: 50px;
+            word-break: break-word;
+            padding-left: 10px;
+            
+
+            &::placeholder{
+                word-break: break-word;
+                
+                font-size: 12px;
+            }
+        }
+    }
+}

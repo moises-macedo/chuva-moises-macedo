@@ -171,3 +171,16 @@
         }
     }
 }
+//media para tleas menores que 480px
+
+@media (max-width: 480px) {
+    .resumo-trueActive  {
+        margin-left: 7.5px;
+    }
+    .resumo-falseActive {
+        margin-left: 7.5px;
+    }
+    .resumo-title {
+        margin-left: 7.5px;
+    }
+}

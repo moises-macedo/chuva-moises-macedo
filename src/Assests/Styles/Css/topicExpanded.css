@@ -182,5 +182,8 @@
 @media (max-width: 780px) {
   .container--topicExpanded {
     margin-left: 12.5px; } }
+@media (max-width: 480px) {
+  .container--topicExpanded {
+    margin-left: 7.5px; } }
 
 /*# sourceMappingURL=topicExpanded.css.map */

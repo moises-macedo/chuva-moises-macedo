@@ -156,3 +156,18 @@
         margin-bottom: 5px;
     }
 }
+// media para telas menores que 768px
+@media (max-width: 480px) {
+
+    .container--header {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        max-height: 220px;
+    }
+    .header-info{
+        margin-top:5px;
+        
+    }
+
+    
+}

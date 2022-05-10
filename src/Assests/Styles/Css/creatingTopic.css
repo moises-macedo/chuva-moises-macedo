@@ -155,5 +155,19 @@
 @media (max-width: 1000px) {
   .creating-title {
     margin-left: 15px; } }
+@media (max-width: 480px) {
+  .creating-title {
+    margin-left: 0; }
+
+  .container--creating {
+    margin-left: 7.5px; }
+
+  .form-subject input {
+    height: 50px;
+    word-break: break-word;
+    padding-left: 10px; }
+    .form-subject input::placeholder {
+      word-break: break-word;
+      font-size: 12px; } }
 
 /*# sourceMappingURL=creatingTopic.css.map */
