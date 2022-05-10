@@ -282,3 +282,10 @@
         width: 95%;
     }
 }
+
+//media para tleas menores que 1000px
+@media (max-width: 1000px) {
+    .container-topic{
+        margin-left: 15px;
+    }
+}

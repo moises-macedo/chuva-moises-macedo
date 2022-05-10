@@ -6,6 +6,7 @@ import Resumo from "./Components/Resumo";
 import TopicoForm from "./Components/TopicoForm";
 import Footer from "./Components/Footer";
 import { useState } from "react";
+import MenuHambugue from "./Components/MenuHamburgue";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
       <MenuNav />
       <div className="container--page-main">
+        <MenuHambugue/>
         <Header />
         <TitleVideo />
         <VideoDescription />

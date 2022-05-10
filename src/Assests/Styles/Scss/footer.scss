@@ -18,3 +18,10 @@
         }
     }
 }
+
+//media para tleas menores que 1000px
+@media (max-width: 1000px) {
+    .container-footer{
+        margin-left: 15px;
+    }
+}

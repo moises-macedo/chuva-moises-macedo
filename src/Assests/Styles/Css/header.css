@@ -14,16 +14,16 @@
   src: url("/src/Assests/Fonts/Segoe/Segoe-UI.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-#root {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 220px 1fr; }
-
 .container--page-main {
   height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth; }
 
+@media (min-width: 1000px) {
+  #root {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr; } }
 .container--header {
   display: flex;
   flex-direction: row;
@@ -46,14 +46,20 @@
     font-size: 22px;
     font-weight: 400;
     color: #725C5C;
-    margin-top: 2px; }
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.header-info {
+  display: flex;
+  margin-right: 15px; }
 
 .header-language {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  max-width: 97px;
+  min-width: 97px;
+  max-width: 120px;
   height: 34px;
   border: 1px solid #CCCCCC;
   border-radius: 3px;
@@ -63,7 +69,6 @@
     color: #333333; }
 
 .header-user {
-  margin-right: 36px;
   display: flex; }
   .header-user .user-login h6 {
     font-family: "Quicksand", sans-serif;
@@ -102,5 +107,23 @@
 
   .header-user {
     margin-left: 25px; } }
+@media (max-width: 1000px) {
+  .header-description {
+    margin-left: 15px; }
+
+  .container--header {
+    height: 100%;
+    min-height: 100px;
+    max-height: 120px; } }
+@media (max-width: 768px) {
+  .container--header {
+    max-height: 150px; }
+
+  .header-info {
+    flex-direction: column;
+    align-items: flex-end; }
+
+  .header-language {
+    margin-bottom: 5px; } }
 
 /*# sourceMappingURL=header.css.map */

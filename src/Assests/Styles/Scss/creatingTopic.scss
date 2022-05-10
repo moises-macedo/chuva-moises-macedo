@@ -183,3 +183,9 @@
         width: 95%;
     }
 }
+// media para telas menores que 1000px
+@media (max-width: 1000px) {
+    .creating-title{
+        margin-left: 15px;
+    }
+}
