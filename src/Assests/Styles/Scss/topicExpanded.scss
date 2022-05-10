@@ -1,7 +1,8 @@
 @import "./global.scss";
 
 .container--topicExpanded {
-    width: 1027px;
+    width: 100%;
+    max-width: 1027px;
     margin-left: 15.5px;
     margin-top: 17px;
     margin-bottom: 15px;
@@ -37,7 +38,8 @@
 }
 
 .primary-post {
-    width: 980px;
+    width: 100%;
+    max-width: 980px;
     height: 35px;
     text-align: start;
     margin-top: 10px;
@@ -209,4 +211,12 @@
 
     }
 
+}
+
+// media para telas menor de 1365px
+
+@media (max-width: 1365px){
+    .container--topicExpanded{
+        width: 95%;
+    }
 }

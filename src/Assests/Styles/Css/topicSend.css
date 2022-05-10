@@ -25,7 +25,8 @@
   scroll-behavior: smooth; }
 
 .send-title {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 22px;
   margin-top: 15px; }
   .send-title h4 {
@@ -36,7 +37,8 @@
 
 .send-answer {
   margin-top: 18px;
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 22px; }
   .send-answer p {
     font-family: "Quicksand", sans-serif;
@@ -47,7 +49,8 @@
 
 .send-link {
   margin-top: 29px;
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 22px;
   text-align: center; }
   .send-link a {
@@ -58,7 +61,8 @@
 
 .send-btn {
   margin-top: 27px;
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 32px;
   display: flex;
   align-items: center;
@@ -79,13 +83,15 @@
       font-size: 15px; }
 
 .send-line {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   background: #E7E7E7;
   height: 1px;
   margin-left: 15.5px; }
 
 .send-topic {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 148px;
   border: 1px solid #E7E7E7;
   margin-left: 15.5px;
@@ -121,7 +127,8 @@
     color: #4d4d4d; }
 
 .send-feedback {
-  width: 1027px;
+  width: 100%;
+  max-width: 1027px;
   height: 148px;
   border: 1px solid #E7E7E7;
   margin-left: 15.5px;
@@ -149,5 +156,15 @@
     font-size: 14px;
     color: #ED7839;
     text-decoration: underline; }
+
+@media (max-width: 1365px) {
+  .send-feedback {
+    width: 95%; }
+
+  .send-topic {
+    width: 95%; }
+
+  .send-line {
+    width: 95%; } }
 
 /*# sourceMappingURL=topicSend.css.map */

@@ -179,8 +179,7 @@
 .videoDescription-info-modal {
   margin-top: 20px;
   margin-left: 44px;
-  width: 100%;
-  max-width: 785px;
+  width: 95%;
   border: 1px solid #ECECEC;
   border-radius: 3px; }
   .videoDescription-info-modal .info-title-modal {
