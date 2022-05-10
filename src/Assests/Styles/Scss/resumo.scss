@@ -142,3 +142,16 @@
 
 
 }
+
+//media para tleas menores que 1000px
+@media (max-width: 1000px) {
+    .resumo-trueActive  {
+        margin-left: 15px;
+    }
+    .resumo-falseActive {
+        margin-left: 15px;
+    }
+    .resumo-title {
+        margin-left: 15px;
+    }
+}

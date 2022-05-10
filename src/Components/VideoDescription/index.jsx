@@ -99,7 +99,7 @@ const VideoDescription = () => {
                         <button onClick={() => setIsActive(!isActive)}>
                             <p>-</p>
                         </button>}
-                    <p>Detalhes</p>
+                    <h3>Detalhes</h3>
                 </div>
                 {/* Mostrando detalhes do video com base nos valores do button */}
                 {isActive === false ? null

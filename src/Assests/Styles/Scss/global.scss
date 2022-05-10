@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box; 
-    font-family: 'Roboto', sans-serif;     
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 
 }
 
 @font-face {
-    font-family:'Segoe UI';
-    src: url('/src/Assests/Fonts/Segoe/Segoe-UI.ttf')
-    format('truetype');
+    font-family: 'Segoe UI';
+    src: url('/src/Assests/Fonts/Segoe/Segoe-UI.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +23,7 @@ $color-orange-20:#FFB354;
 $color-orange-30:#EE7A3A;
 $color-orange-40:#FFB455;
 $color-orange-50:#ED7839;
-$color-btn-nav:#725C5C; 
+$color-btn-nav:#725C5C;
 $color-border:#E7E7E7;
 $color-white:#ffffff;
 $color-gray-10:#F8F8F8;
@@ -37,17 +36,33 @@ $color-gray-70:#333333;
 $color-border-header:#CCCCCC;
 $color-background-menu:#FDF1EB;
 $color-red-40:#F85959;
-$font-text: 'Quicksand', sans-serif;
+$font-text: 'Quicksand',
+sans-serif;
 $font-externa:'Segoe UI';
 
-#root{
+
+
+.container--page-main {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 220px 1fr;    
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
-.container--page-main{
-    height: 100vh;
-    overflow-y:auto;
-    scroll-behavior: smooth;
+@mixin title ($font-size) {
+    font-size: $font-size;
+    font-weight: 700;
+    color: $color-white;
+    text-transform: uppercase;
+
+}
+
+// diplay para telas maiores que 900px -- Será no display Grid
+
+@media (min-width: 1000px) {
+    #root {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+    }
+
 }

@@ -14,16 +14,16 @@
   src: url("/src/Assests/Fonts/Segoe/Segoe-UI.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-#root {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 220px 1fr; }
-
 .container--page-main {
   height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth; }
 
+@media (min-width: 1000px) {
+  #root {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr; } }
 .container-topic {
   width: 100%;
   max-width: 1058px;
@@ -235,5 +235,8 @@
 
   .feed-img {
     width: 95%; } }
+@media (max-width: 1000px) {
+  .container-topic {
+    margin-left: 15px; } }
 
 /*# sourceMappingURL=topicoForm.css.map */

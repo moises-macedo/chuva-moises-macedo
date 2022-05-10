@@ -171,6 +171,8 @@
     }
 
 }
+
+//media para telas menores que 1365px
 @media (max-width: 1365px) {
     .send-feedback{
         width: 95%;
@@ -182,4 +184,9 @@
         width: 95%;
 
     }
+}
+
+//media para tleas menores que 1000px
+@media (max-width: 1000px) {
+   
 }
