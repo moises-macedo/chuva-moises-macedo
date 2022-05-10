@@ -45,7 +45,7 @@ $font-externa:'Segoe UI';
 .container--page-main {
     height: 100vh;
     overflow-y: auto;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 @mixin title ($font-size) {
@@ -56,7 +56,7 @@ $font-externa:'Segoe UI';
 
 }
 
-// diplay para telas maiores que 900px -- Será no display Grid
+// diplay para telas maiores que 1000px -- Será no display Grid
 
 @media (min-width: 1000px) {
     #root {

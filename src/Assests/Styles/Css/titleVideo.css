@@ -129,6 +129,11 @@
   .titleVideo-description {
     margin-right: 0;
     margin-left: 15px;
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+
+  .titleVideo-title {
+    width: 95%; }
+    .titleVideo-title h2 {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=titleVideo.css.map */

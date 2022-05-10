@@ -185,4 +185,15 @@
 
     }
 }
+//media para telas menores que 480px
+@media (max-width: 480px) {
+    .send-feedback{
+        margin-left: 7.5px;
+    }
+    .send-topic{
+        margin-left: 7.5px;
+    }
+    
+    
+}
 

@@ -166,5 +166,11 @@
 
   .send-line {
     width: 95%; } }
+@media (max-width: 480px) {
+  .send-feedback {
+    margin-left: 7.5px; }
+
+  .send-topic {
+    margin-left: 7.5px; } }
 
 /*# sourceMappingURL=topicSend.css.map */
