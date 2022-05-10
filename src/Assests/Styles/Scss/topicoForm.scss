@@ -289,3 +289,18 @@
         margin-left: 15px;
     }
 }
+//media para tleas menores que 780px
+@media (max-width: 780px) {
+    .feed-static{
+        margin-left: 12.5px;
+    }
+    .static-topic{
+        margin-left: 12.5px;
+    }
+    .feed-line{
+        margin-left: 12.5px;
+    }
+    .feed-img{
+        margin-left: 12.5px;
+    }
+}

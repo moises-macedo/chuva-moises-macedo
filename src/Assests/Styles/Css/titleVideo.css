@@ -115,5 +115,8 @@
   .titleVideo-title {
     margin-left: 15px;
     margin-top: 15px; } }
+@media (max-width: 768px) {
+  .titleVideo-description {
+    margin-right: 15px; } }
 
 /*# sourceMappingURL=titleVideo.css.map */

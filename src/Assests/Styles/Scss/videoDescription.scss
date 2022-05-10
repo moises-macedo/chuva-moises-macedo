@@ -326,4 +326,14 @@
     }
 
 }
+//media para tleas menores que 780px
+@media (max-width: 780px) {
+    
+    .videoDescription-video{
+        background-size:  450px;        
+        width: 90%;
+        height:252px
+    }
+
+}
 

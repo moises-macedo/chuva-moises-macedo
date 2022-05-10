@@ -237,5 +237,10 @@
 
   .videoDescription-info-modal {
     margin-left: 15px; } }
+@media (max-width: 780px) {
+  .videoDescription-video {
+    background-size: 450px;
+    width: 90%;
+    height: 252px; } }
 
 /*# sourceMappingURL=videoDescription.css.map */

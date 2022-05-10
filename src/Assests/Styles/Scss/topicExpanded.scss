@@ -40,7 +40,7 @@
 .primary-post {
     width: 100%;
     max-width: 980px;
-    height: 35px;
+    // min-height: 35px;
     text-align: start;
     margin-top: 10px;
 
@@ -129,9 +129,9 @@
     border-top: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
     background: $color-gray-10;
-    height: 100%;
-    min-height: 131px;
-    max-height: 184px;
+    // height: 100%;
+    // min-height: 131px;
+    // max-height: 184px;
     &:nth-child(n+5){
         border-bottom: none;
     }
@@ -218,5 +218,12 @@
 @media (max-width: 1365px){
     .container--topicExpanded{
         width: 95%;
+    }
+}
+// media para telas menor de 780px
+
+@media (max-width: 780px){
+    .container--topicExpanded {
+        margin-left: 12.5px;
     }
 }
