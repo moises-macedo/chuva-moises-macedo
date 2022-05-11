@@ -171,6 +171,9 @@
     margin-left: 7.5px; }
 
   .send-topic {
-    margin-left: 7.5px; } }
+    margin-left: 7.5px; }
+
+  .send--topic-result p {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=topicSend.css.map */

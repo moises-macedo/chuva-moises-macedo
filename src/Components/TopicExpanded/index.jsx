@@ -27,6 +27,8 @@ const TopicExpanded = ({onClick}) => {
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
                     </div>
+
+                    {/* verificação se o like foi dado se true irá trocar a cor */}
                     <button onClick={handleLike} className="primary--interaction-btn">
                         <p className={isLike === true ? "givenLike" : null}><MdFavorite /></p>
                     </button>

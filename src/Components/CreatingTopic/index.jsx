@@ -38,6 +38,7 @@ const CreatingTopic = ({onClick}) =>{
                 </div>
                 <div className="form-content">
                     <label>Conteúdo</label>
+                    {/* verificação de fi ativado o button para mudar font-style*/}
                     <textarea className={btnBold=== true? "btnBold": btnItalic === true? "btnItalic": null}
                     {...register("textarea")}>
 

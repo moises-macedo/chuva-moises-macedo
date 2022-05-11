@@ -2,18 +2,20 @@ import { useState } from "react"
 import "../../Assests/Styles/Css/resumo.css";
 
 const Resumo = () => {
-    const [isActive, setActive] = useState(false)
+    const [isActive, setActive] = useState(false);
+    
     return (
         <div>
             <div className="resumo-title">
                 <h3>Resumo</h3>
             </div>
             <div className="container--resumo">
+                {/* verificando se button foi ativado se true vai expandir o topico */}
                 {isActive === false ? (
                     <div className="resumo-falseActive">
                         <p className="falseActive-paragraph">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...
-                            <button onClick={() => setActive(true)}>
+                            <button onClick={() => setActive(!isActive)}>
                                 <p>ver mais</p>
                             </button>
                         </p>
@@ -32,7 +34,7 @@ const Resumo = () => {
                         </p>
                         <p>
                             Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            <button button onClick={() => setActive(false)}>
+                            <button button onClick={() => setActive(!isActive)}>
                                 <span>ver menos</span>
                             </button>
                         </p>

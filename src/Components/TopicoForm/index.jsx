@@ -41,6 +41,7 @@ const TopicoForm = () => {
             </div>
 
             <div className="topic-feed">
+                {/* feita primeira vericiação de click para criar topico */}
                 {btnCreating === false ? (
                     <>
                         <div className="feed-title">
@@ -61,7 +62,7 @@ const TopicoForm = () => {
                             </button>
                         </div>
                     </>
-
+                    // verificação para para click de enviar post
                 ) : btnSend === false ? (<CreatingTopic onClick={() => setBtnSend(!btnSend)} />) :
                     <TopicSend onClick={() => setBtnSend(false)} />}
 
@@ -80,6 +81,7 @@ const TopicoForm = () => {
                             <span>&nbsp;</span>
                             <span>&nbsp;</span>
                         </div>
+                        {/* verificando se foi dado like, se sim irá mudar a cor */}
                         <button onClick={handleLikeOn} className="interaction-btn">
                             <p className={isLike === true ? "givenLike" : null}><MdFavorite /></p>
                         </button>
@@ -93,6 +95,7 @@ const TopicoForm = () => {
                         </div>
                     </div>
                 </div>
+                {/* verificando se foi cliado para expandir o post */}
                 {isExpanded === false ? (
                     <div className="feed-static">
                         <div className="static-title">
@@ -108,6 +111,7 @@ const TopicoForm = () => {
                                 <span>&nbsp;</span>
                                 <span>&nbsp;</span>
                             </div>
+                            {/* verificando se foi dado like, se sim irá mudar a cor */}
                             <button onClick={handleLike} className="interaction-btn">
                                 <p className={isLikeTwo === true ? "givenLike" : null}><MdFavorite /></p>
                             </button>
